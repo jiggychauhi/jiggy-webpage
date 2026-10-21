@@ -262,20 +262,31 @@ footer {
 }
 
 .news-link {
-  font: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-block;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 2px 0;
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
+  font-weight: 400;
   color: #1772d0;
-  background: none;
-  border: 0;
-  padding: 4px 0;
   cursor: pointer;
+  transition: color 0.15s ease;
 }
 
-.news-link:hover,
-.news-link:focus-visible {
+.news-link:hover {
   color: #f09228;
 }
 
+.news-link:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 4px;
+}
 /* News archive popup */
 
 .news-dialog {
