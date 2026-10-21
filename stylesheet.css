@@ -6,6 +6,7 @@
   src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -14,6 +15,7 @@
   src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -22,6 +24,7 @@
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -30,6 +33,7 @@
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -38,6 +42,7 @@
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -46,6 +51,7 @@
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -54,6 +60,7 @@
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Lato';
@@ -141,21 +148,178 @@ span.highlight {
 }
 
 .colored-box {
-    color: black;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
+  color: black;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 10px;
 }
 
-/* Shared navigation and collapsible project descriptions. */
-.page-container { width: 100%; max-width: 800px; margin: 0 auto; }
-.page-tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; padding: 20px 16px 12px; }
-.page-tabs a { padding: 8px 0; border-bottom: 2px solid transparent; }
-.page-tabs a[aria-current="page"] { border-bottom-color: #1772d0; font-weight: 700; }
-.section-heading { padding: 0 16px 16px; }
-.section-heading .name { text-align: center; margin-bottom: 24px; }
-.project-description { margin: 14px 0; }
-.project-description summary { color: #1772d0; cursor: pointer; width: fit-content; }
-.project-description summary:hover, .project-description summary:focus-visible { color: #f09228; }
-.project-description p { margin-bottom: 0; }
-footer { max-width: 800px; margin: 32px auto 0; }
+/* Shared page layout */
+
+.page-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Navigation tabs */
+
+.page-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 20px 16px 12px;
+}
+
+.page-tabs a {
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.page-tabs a[aria-current="page"] {
+  border-bottom-color: #1772d0;
+  font-weight: 700;
+}
+
+/* Research and course projects */
+
+.section-heading {
+  padding: 0 16px 16px;
+}
+
+.section-heading .name {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.project-description {
+  margin: 14px 0;
+}
+
+.project-description summary {
+  color: #1772d0;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.project-description summary:hover,
+.project-description summary:focus-visible {
+  color: #f09228;
+}
+
+.project-description p {
+  margin-bottom: 0;
+}
+
+footer {
+  max-width: 800px;
+  margin: 32px auto 0;
+}
+
+/* Homepage news panel */
+
+.news-panel {
+  margin: 20px 16px 0;
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.news-list li:last-child {
+  border-bottom: 0;
+}
+
+.news-list p {
+  margin: 0;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.news-date {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.news-panel-footer {
+  margin-top: 14px;
+  text-align: right;
+}
+
+.news-link {
+  font: inherit;
+  font-size: 14px;
+  color: #1772d0;
+  background: none;
+  border: 0;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.news-link:hover,
+.news-link:focus-visible {
+  color: #f09228;
+}
+
+/* News archive popup */
+
+.news-dialog {
+  box-sizing: border-box;
+  width: calc(100% - 32px);
+  max-width: 720px;
+  max-height: 80vh;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #000;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.news-dialog::backdrop {
+  background: rgba(0, 0, 0, .4);
+}
+
+.news-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.news-dialog-header form {
+  margin: 0;
+}
+
+.news-no-script {
+  padding: 0 16px;
+}
+
+/* News layout on smaller screens */
+
+@media (max-width: 480px) {
+  .news-list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .news-panel,
+  .news-dialog {
+    padding: 16px;
+  }
+}

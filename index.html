@@ -1,39 +1,181 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>Yash Chauhan</title>
-<meta content="Yash Chauhan" name="author"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<link href="images/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <meta charset="utf-8">
+  <title>Yash Chauhan</title>
+  <meta name="author" content="Yash Chauhan">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
 </head>
-<body><main class="page-container"><nav class="page-tabs" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="research.html">Research</a><a href="course-projects.html">Course Projects</a></nav><table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<tr style="padding:0px">
-<td style="padding:2.5%;width:63%;vertical-align:middle">
-<p class="name" style="text-align: center;">
-                   Yash Chauhan
-                </p>
-<p>I am currently a fourth-year Physics Major pursuing my Integrated Master's degree from <a href="https://www.niser.ac.in/">NISER Bhubaneswar, India</a>. I am interested in experimental and theoretical aspects of many-body physics, especially in the context of topological quantum matter and quantum information theory.
-                </p>
-<!-- <p></p> -->
 
-<p style="text-align:center">
-<a href="mailto:yash.chauhan@niser.ac.in">Email</a>  / 
-                  <a href="data/Resume_Chauhan_Yash.pdf">CV</a>  / 
-                  <a href="https://scholar.google.com/citations?user=HxoY1MkAAAAJ&amp;hl=en">Scholar</a>  / 
-                  <a href="https://github.com/jiggychauhi">Github</a>  / 
-                  <a href="https://in.linkedin.com/in/jiggychauhi">LinkedIn</a>
-</p>
-</td>
-<td style="padding: 2.5%; width: 25%; max-width: 25%;">
-<a href="images/profile2.jpg">
-<img alt="profile photo" class="hoverZoomLink" src="images/profile2.jpg" style="width: 100%; height: auto; max-width: 100%; object-fit: cover; border-radius: 50%; aspect-ratio: 1 / 1;"/>
-</a>
-</td>
-</tr>
+<body>
+  <main class="page-container">
 
+    <nav class="page-tabs" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="course-projects.html">Course Projects</a>
+    </nav>
 
-</tbody></table></main><footer><p style="text-align:center;font-size:small;">Design and source code from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.</p></footer>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <tr style="padding:0px">
+          <td style="padding:2.5%;width:63%;vertical-align:middle">
+
+            <p class="name" style="text-align:center;">
+              Yash Chauhan
+            </p>
+
+            <p>
+              I am currently a fourth-year Physics Major pursuing my Integrated
+              Master's degree from
+              <a href="https://www.niser.ac.in/">NISER Bhubaneswar, India</a>.
+              I am interested in experimental and theoretical aspects of
+              many-body physics, especially in the context of topological
+              quantum matter and quantum information theory.
+            </p>
+
+            <p style="text-align:center">
+              <a href="mailto:yash.chauhan@niser.ac.in">Email</a>
+              &nbsp;/&nbsp;
+              <a href="data/Resume_Chauhan_Yash.pdf">CV</a>
+              &nbsp;/&nbsp;
+              <a href="https://scholar.google.com/citations?user=HxoY1MkAAAAJ&amp;hl=en">Scholar</a>
+              &nbsp;/&nbsp;
+              <a href="https://github.com/jiggychauhi">Github</a>
+              &nbsp;/&nbsp;
+              <a href="https://in.linkedin.com/in/jiggychauhi">LinkedIn</a>
+            </p>
+
+          </td>
+
+          <td style="padding:2.5%;width:25%;max-width:25%;">
+            <a href="images/profile2.jpg">
+              <img
+                src="images/profile2.jpg"
+                alt="profile photo"
+                class="hoverZoomLink"
+                style="width:100%;height:auto;max-width:100%;object-fit:cover;border-radius:50%;aspect-ratio:1 / 1;"
+              >
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Homepage displays the first three entries from the archive. -->
+    <section class="news-panel" aria-labelledby="news-heading">
+      <h2 id="news-heading">News</h2>
+
+      <ul class="news-list" id="latest-news"></ul>
+
+      <div class="news-panel-footer">
+        <button class="news-link" type="button" id="open-news-archive">
+          View archive
+        </button>
+      </div>
+    </section>
+
+    <!-- News archive popup -->
+    <dialog
+      id="news-archive"
+      class="news-dialog"
+      aria-labelledby="news-archive-heading"
+    >
+      <div class="news-dialog-header">
+        <h2 id="news-archive-heading">News archive</h2>
+
+        <form method="dialog">
+          <button class="news-link" type="submit" autofocus>
+            Close
+          </button>
+        </form>
+      </div>
+
+      <!--
+        EDIT YOUR NEWS HERE, NEWEST FIRST.
+
+        The first three entries automatically appear on the homepage.
+        All entries appear in this archive.
+
+        Replace each [Date] and placeholder paragraph.
+        Add more <li>...</li> entries whenever needed.
+      -->
+      <ul class="news-list" id="all-news">
+
+        <li>
+          <span class="news-date">[Date]</span>
+          <p>[Add your latest news here.]</p>
+        </li>
+
+        <li>
+          <span class="news-date">[Date]</span>
+          <p>[Add your second news entry here.]</p>
+        </li>
+
+        <li>
+          <span class="news-date">[Date]</span>
+          <p>[Add your third news entry here.]</p>
+        </li>
+
+        <li>
+          <span class="news-date">[Date]</span>
+          <p>[Add an older news entry here. This appears only in the archive.]</p>
+        </li>
+
+      </ul>
+    </dialog>
+
+    <noscript>
+      <p class="news-no-script">
+        Enable JavaScript to view the news panel and archive.
+      </p>
+    </noscript>
+
+  </main>
+
+  <footer>
+    <p style="text-align:center;font-size:small;">
+      Design and source code from
+      <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
+    </p>
+  </footer>
+
+  <script>
+    const archive = document.getElementById('news-archive');
+    const latestNews = document.getElementById('latest-news');
+    const archiveButton = document.getElementById('open-news-archive');
+
+    // Show only the first three news entries on the homepage.
+    Array.from(document.getElementById('all-news').children)
+      .slice(0, 3)
+      .forEach(entry => {
+        latestNews.appendChild(entry.cloneNode(true));
+      });
+
+    // Open the archive popup.
+    archiveButton.addEventListener('click', () => {
+      archive.showModal();
+    });
+
+    // Close when clicking outside the popup.
+    // The Close button and Escape key also close it.
+    archive.addEventListener('click', event => {
+      if (event.target !== archive) return;
+
+      const bounds = archive.getBoundingClientRect();
+
+      if (
+        event.clientX < bounds.left ||
+        event.clientX > bounds.right ||
+        event.clientY < bounds.top ||
+        event.clientY > bounds.bottom
+      ) {
+        archive.close();
+      }
+    });
+  </script>
 </body>
 </html>
