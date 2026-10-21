@@ -334,20 +334,3 @@ footer {
     padding: 16px;
   }
 }
-
-button.news-link {
-  all: unset;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #1772d0;
-  cursor: pointer;
-}
-
-button.news-link:hover {
-  color: #f09228;
-}
-
-button.news-link:focus-visible {
-  outline: 1px solid currentColor;
-  outline-offset: 4px;
-}
