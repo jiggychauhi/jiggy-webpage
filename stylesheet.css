@@ -146,3 +146,16 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* Shared navigation and collapsible project descriptions. */
+.page-container { width: 100%; max-width: 800px; margin: 0 auto; }
+.page-tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; padding: 20px 16px 12px; }
+.page-tabs a { padding: 8px 0; border-bottom: 2px solid transparent; }
+.page-tabs a[aria-current="page"] { border-bottom-color: #1772d0; font-weight: 700; }
+.section-heading { padding: 0 16px 16px; }
+.section-heading .name { text-align: center; margin-bottom: 24px; }
+.project-description { margin: 14px 0; }
+.project-description summary { color: #1772d0; cursor: pointer; width: fit-content; }
+.project-description summary:hover, .project-description summary:focus-visible { color: #f09228; }
+.project-description p { margin-bottom: 0; }
+footer { max-width: 800px; margin: 32px auto 0; }
