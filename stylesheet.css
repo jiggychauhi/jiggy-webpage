@@ -488,3 +488,47 @@ img { max-width: 100%; }
 .photos-right .presentation-photo { max-width: 420px; margin-bottom: 28px; }
 .presentation-photo > a { display: block; }
 .presentation-photo > a:focus-visible { outline: 2px solid #1772d0; outline-offset: 4px; border-radius: 5px; }
+
+@media (max-width: 800px) {
+  .photos-left .lam-talk-photo { max-width: 420px; margin-top: 28px; }
+}
+
+/* Enlarge the LAM photograph outward while preserving the text gutter. */
+@media (min-width: 801px) {
+  .photos-left .lam-talk-photo, .photos-left .quikstart-food-photo { --photo-extra: clamp(0px, calc((100vw - 1240px) / 2 + 4px), 100px); width: calc(100% + var(--photo-extra)); margin-top: 28px; margin-left: calc(0px - var(--photo-extra)); }
+}
+@media (max-width: 800px) {
+  .photos-left .lam-talk-photo, .photos-left .quikstart-food-photo { width: 100%; max-width: 500px; }
+}
+
+/* Align the dinner photograph with the middle of the poster list. */
+@media (min-width: 801px) {
+  .presentation-lists { display: contents; }
+  .presentation-lists > section { grid-column: 2; }
+  .presentation-lists > section:first-child { grid-row: 1; }
+  .presentation-lists > section + section { grid-row: 2; margin-top: 0; }
+  .photos-left { grid-column: 1; grid-row: 1; }
+  .photos-right { grid-column: 3; grid-row: 1 / span 2; }
+  .presentations-layout > .quikstart-food-photo { grid-column: 1; grid-row: 2; align-self: center; --photo-extra: clamp(0px, calc((100vw - 1240px) / 2 + 4px), 100px); width: calc(100% + var(--photo-extra)); margin: 0 0 0 calc(0px - var(--photo-extra)); }
+}
+@media (max-width: 800px) {
+  .presentations-layout > .quikstart-food-photo { grid-column: 1 / -1; width: 100%; max-width: 500px; margin: 0 auto; }
+}
+
+/* Numbered APA-style publication citations. */
+.publication-list { margin: 0 24px 32px; padding-left: 24px; }
+.publication-list li { padding: 0 0 22px 10px; }
+.publication-list li::marker { color: #666; }
+.publication-list p { margin: 0; line-height: 1.8; overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .publication-list { margin-inline: 12px; padding-left: 22px; }
+  .publication-list li { padding-left: 6px; }
+}
+
+.publication-note { margin: -12px 24px 34px; color: #666; font-size: 13px; }
+.publication-section > h2 { margin: 0 24px 22px; padding-bottom: 12px; border-bottom: 1px solid #dce6f0; }
+.publication-list sup a { font-size: 12px; }
+#corresponding-author { scroll-margin-top: 20px; }
+@media (max-width: 600px) {
+  .publication-note, .publication-section > h2 { margin-left: 12px; margin-right: 12px; }
+}
