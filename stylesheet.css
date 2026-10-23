@@ -212,6 +212,21 @@ span.highlight {
   margin-bottom: 0;
 }
 
+.course-page main > table td:first-child {
+  width: 32% !important;
+}
+
+.course-page main > table td:last-child {
+  width: 68% !important;
+}
+
+.course-page main > table img {
+  display: block;
+  width: 220px;
+  height: auto;
+  margin-inline: auto;
+}
+
 footer {
   max-width: 800px;
   margin: 32px auto 0;
@@ -416,8 +431,9 @@ img { max-width: 100%; }
   .course-page main > table, .course-page main > table > tbody, .course-page main > table > tbody > tr, .course-page main > table > tbody > tr > td { display: block; width: auto !important; }
   .course-page main > table { margin-bottom: 20px !important; }
   .course-page main > table td { padding: 12px 16px !important; }
+  .course-page main > table td:first-child, .course-page main > table td:last-child { width: auto !important; }
   .course-page main > table td:first-child { padding-bottom: 0 !important; }
-  .course-page main > table img { width: 140px; height: 140px; object-fit: contain; }
+  .course-page main > table img { width: 220px; height: auto; }
   .news-panel { margin-inline: 8px; }
   .research-popup { max-height: calc(100dvh - 32px); }
 }
